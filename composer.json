@@ -1,0 +1,16 @@
+{
+    "name": "silverstripe/gallery",
+    "description": "Gallery Module for Silverstripe",
+    "type": "silverstripe-module",
+    "version": "1.0.0",
+    "require": {
+        "silverstripe/framework": "3.0.*",
+		"silverstripe/prettyphoto": "dev-master"
+    },
+	"authors": [
+	        {
+	            "name": "Stefan Englmann",
+	            "email": "se@schwarz.de"
+	        }
+	 ]
+}

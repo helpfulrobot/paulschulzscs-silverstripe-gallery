@@ -1,0 +1,47 @@
+div.galleryimage {
+    border: 1px solid #CCCCCC;
+    float: left;
+    height: 94px;
+    margin: 10px 10px 0 0;
+    padding: 6px;
+    width: 94px;
+}
+
+div.gallery {
+	display: block;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+div.gallery a {
+	display: block;
+	width: 120px;
+	text-decoration: none;
+	color: #666;
+}
+div.gallery br {
+	clear: left;
+}
+div.gallery a span {
+	clear: left;
+	display: block;
+	font-size: 14px;
+	color: #666;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 16px;
+}
+div.gallery div {
+    border: 1px solid #CCCCCC;
+    float: left;
+    height: 98px;
+    margin: 0;
+    padding: 4px;
+    width: 98px;
+    overflow: visible;
+    background: #fff;
+}
+div.gallery div div div {
+    height: 94px;
+    padding: 6px;
+    width: 94px;
+}
