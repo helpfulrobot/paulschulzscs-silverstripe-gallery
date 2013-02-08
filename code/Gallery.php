@@ -73,7 +73,7 @@ class Gallery_Controller extends Page_Controller {
 		Requirements::css('prettyphoto/css/prettyPhoto.css');
 		Requirements::css('gallery/css/gallery.css');
 		
-		$prettyPhotoConfigJson = json_encode($prettyPhotoConfig);
+		$prettyPhotoConfigJson = json_encode(Gallery::$prettyPhotoConfig);
 	
 	    Requirements::customScript(<<<SCRIPT
 	            $(document).ready(function(){
