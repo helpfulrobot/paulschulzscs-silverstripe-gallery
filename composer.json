@@ -5,7 +5,7 @@
 	"version": "1.0.0",
 	"require": {
 		"silverstripe/framework": "3.0.*",
-		"silverstripe/prettyphoto": "dev-master"
+		"silverstripe/prettyphoto": "1.0.*"
 	},
 	"authors": [
 		{
