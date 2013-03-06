@@ -68,7 +68,7 @@ class Gallery_Controller extends Page_Controller {
 	public function init() {
 		parent::init();
 		
-		Requirements::javascript('prettyphoto/js/jquery-1.6.1.min.js');
+		Requirements::javascript('framework/thirdparty/jquery/jquery.min.js');
 		Requirements::javascript('prettyphoto/js/jquery.prettyPhoto.js');
 		Requirements::css('prettyphoto/css/prettyPhoto.css');
 		Requirements::css('gallery/css/gallery.css');
