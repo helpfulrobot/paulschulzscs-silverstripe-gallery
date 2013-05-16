@@ -34,7 +34,7 @@ class Gallery extends Page {
 	{	
 	  parent::onBeforeWrite();
 	  		
-		if(!$this->ImageFolderID && substr($this->URLSegment, 0, 4) != 'new-' && substr($this->URLSegment, 0, 5) != 'neue-') {
+		if(!$this->ImageFolderID && (substr($this->URLSegment, 0, 4) != 'new-' || substr($this->URLSegment, 0, 5) != 'neue-')) {
 			$folder = Folder::find_or_make($this->URLSegment);
 			$this->ImageFolderID = $folder->ID;
 		}
