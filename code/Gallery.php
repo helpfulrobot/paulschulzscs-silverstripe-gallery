@@ -71,7 +71,7 @@ class Gallery_Controller extends Page_Controller {
 		Requirements::javascript('framework/thirdparty/jquery/jquery.min.js');
 		Requirements::javascript('prettyphoto/js/jquery.prettyPhoto.js');
 		Requirements::css('prettyphoto/css/prettyPhoto.css');
-		Requirements::themedCSS('gallery/css/gallery.css');
+		Requirements::themedCSS('gallery');
 		
 		$prettyPhotoConfigJson = json_encode(Gallery::$prettyPhotoConfig);
 	
