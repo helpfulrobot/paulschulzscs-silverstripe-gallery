@@ -1,9 +1,9 @@
 {
-	"name": "silverstripe/gallery",
+    "name": "silverstripe/gallery",
 	"description": "Gallery Module for Silverstripe",
 	"type": "silverstripe-module",
 	"require": {
-		"silverstripe/framework": "3.0.*",
+		"silverstripe/framework": "3.*",
 		"silverstripe/prettyphoto": "1.0.*"
 	},
 	"authors": [
