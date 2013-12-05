@@ -1,0 +1,12 @@
+---
+Name: gallery
+---
+GalleryHolder:
+  ShowGalleriesInSubmenu:    true
+  HideEmptyGalleries:        true
+  ImageResizeFunction:       paddedResize      # resize, resizeRatio, paddedResize, croppedImage, resizeByHeight, resizeByWidth
+  ImageResizeAttributes:     [94,94]
+  
+Gallery:
+  ImageResizeFunction:       paddedResize      # resize, resizeRatio, paddedResize, croppedImage, resizeByHeight, resizeByWidth
+  ImageResizeAttributes:     [94,94]
