@@ -1,7 +1,7 @@
-<% loop Children %>
+<% loop $Galleries %>
 	<div class="gallery">
 		<a href="$Link" >
-			<div><div><div>$IndexImage.PaddedImage(94, 94)</div></div></div>
+			<div><div><div>$IndexImage</div></div></div>
 			<br />
 			<span>$MenuTitle</span>
 		</a>

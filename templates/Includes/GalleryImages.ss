@@ -1,7 +1,7 @@
-<% loop Images %>
+<% loop $Thumbnails %>
 	<div class="galleryimage">
-		<a href="$Link" rel="gallery[pp_gal]" title="$Title">
-			$PaddedImage(94, 94)
+		<a href="$Image.Link" rel="gallery[pp_gal]" title="$Image.Title">
+			$Thumbnail
 		</a>
 	</div>
 <% end_loop %>

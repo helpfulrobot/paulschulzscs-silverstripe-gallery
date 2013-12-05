@@ -33,15 +33,18 @@ div.gallery a span {
 div.gallery div {
     border: 1px solid #CCCCCC;
     float: left;
-    height: 98px;
     margin: 0;
-    padding: 4px;
-    width: 98px;
     overflow: visible;
     background: #fff;
+    position: relative;
+}
+div.gallery div > div {
+    left: 4px;
+    top: 4px;
 }
 div.gallery div div div {
-    height: 94px;
     padding: 6px;
-    width: 94px;
+}
+div.gallery div div div img {
+    display: block;
 }
