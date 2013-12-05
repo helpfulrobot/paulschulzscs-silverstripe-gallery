@@ -4,9 +4,14 @@ Name: gallery
 GalleryHolder:
   ShowGalleriesInSubmenu:    true
   HideEmptyGalleries:        true
-  ImageResizeFunction:       paddedResize      # resize, resizeRatio, paddedResize, croppedImage, resizeByHeight, resizeByWidth
+  ImageResizeFunction:       paddedImage      # paddedImage, croppedImage
   ImageResizeAttributes:     [94,94]
   
 Gallery:
-  ImageResizeFunction:       paddedResize      # resize, resizeRatio, paddedResize, croppedImage, resizeByHeight, resizeByWidth
+  ImageResizeFunction:       paddedImage      # paddedImage, croppedImage
   ImageResizeAttributes:     [94,94]
+  PrettyPhotoConfig: 
+    overlay_gallery:         false
+    theme:                   light_rounded
+    social_tools:            false
+    

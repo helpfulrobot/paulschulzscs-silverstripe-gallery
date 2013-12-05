@@ -151,7 +151,7 @@ class Gallery_Controller extends Page_Controller {
         
 		Requirements::themedCSS('gallery', 'gallery');
 		
-		$prettyPhotoConfigJson = json_encode(Gallery::$prettyPhotoConfig);
+		$prettyPhotoConfigJson = json_encode(Config::inst()->get('Gallery', 'PrettyPhotoConfig'));
 	
 	    Requirements::customScript(<<<SCRIPT
 	            $(document).ready(function(){
