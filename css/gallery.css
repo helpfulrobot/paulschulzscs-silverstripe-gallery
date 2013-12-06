@@ -1,10 +1,8 @@
 div.galleryimage {
     border: 1px solid #CCCCCC;
     float: left;
-    height: 94px;
     margin: 10px 10px 0 0;
     padding: 6px;
-    width: 94px;
 }
 
 div.gallery {
