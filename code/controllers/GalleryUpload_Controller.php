@@ -2,7 +2,7 @@
 
 class Gallery_UploadController extends LeftAndMain {
         
-    private static $menu_title = false;
+    private static $menu_title = 'Galerie-Bilder hochladen';
     private static $url_segment = 'gallery/upload';
     private static $url_priority = 60;
     private static $required_permission_codes = 'CMS_ACCESS';
@@ -88,8 +88,7 @@ class Gallery_UploadController extends LeftAndMain {
     public function init()
     {
 	    parent::init();
-	    
-	    CMSMenu::remove_menu_item('Gallery_UploadController');
+	    	    
 	    $items = $this->MainMenu();
 	    
 	    $pagesLink = $items->find('Link', 'admin/pages/');
