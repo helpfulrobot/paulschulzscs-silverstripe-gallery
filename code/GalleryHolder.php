@@ -21,12 +21,14 @@ class GalleryHolder extends Page {
         $galleries = Gallery::get()->filter('ParentID', $this->ID);
         
         if(Config::inst()->get('GalleryHolder', 'HideEmptyGalleries')) {
+        	$ret = new ArrayList();
             foreach($galleries as $g) {
-	            if($g->numOfImages() == 0) {
-	            	$galleries->remove($g);
+	            if($g->numOfImages() > 0) {
+	            	$ret->push($g);
 	            }
-            }
-        }                    
+            }            
+            return $ret;
+        }                 
         return $galleries;
     }
     

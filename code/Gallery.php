@@ -118,6 +118,8 @@ class Gallery extends Page {
             $image = Image::get()->filter('ParentID', $this->ImageFolderID)->First();
         }
         
+        if(!$image) return null;
+        
         $function = Config::inst()->get('GalleryHolder', 'ImageResizeFunction');
                         
         return call_user_func_array(array(
