@@ -94,5 +94,40 @@ class Gallery_UploadController extends LeftAndMain {
 	    $pagesLink = $items->find('Link', 'admin/pages/');
 	    $pagesLink->LinkingMode = 'current';
     }
+	
+	public function canEdit($Member = null) {
+        
+        return true;
+        
+    }
+    
+    public function canDelete($Member = null) {
+        
+        
+        return true;
+    }
+    
+    public function canCreate($Member = null) {
+        
+        return true;
+    }
+    
+    public function canPublish($Member = null) {
+        
+        return true;
+    }
+    
+    public function canView($Member = null) {
+        
+        return true;
+    }
+	
+	
+	
+	
+	
+	
+	
+	
     
 }
