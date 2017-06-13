@@ -12,7 +12,7 @@
 <% if $Images %>
     <section class="gallery__images">
         <ul>
-            <% loop $Image.Sort('SortOrder') %>
+            <% loop $Images.Sort('SortOrder') %>
                 <li>
                     <a href="$Image.FitMax(1280, 1024).Link" data-lightbox="gallery">$Image.FocusFill(400, 300)</a>
                 </li>
