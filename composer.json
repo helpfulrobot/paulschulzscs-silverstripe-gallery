@@ -1,0 +1,20 @@
+{
+  "name": "paulschulzscs/silverstripe-gallery",
+  "description": "A simple SilverStripe 3 gallery",
+  "type": "silverstripe-module",
+  "keywords": ["silverstripe", "gallery", "images"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Paul Schulz"
+    }
+  ],
+  "require":
+  {
+    "silverstripe/framework": "~3.1",
+    "bummzack/sortablefile": "1.*"
+  },
+  "extra": {
+    "installer-name": "gallery"
+  }
+}
