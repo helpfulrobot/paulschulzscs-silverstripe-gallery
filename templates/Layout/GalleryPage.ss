@@ -14,7 +14,7 @@
         <ul>
             <% loop $Images.Sort('SortOrder') %>
                 <li>
-                    <a href="$Image.FitMax(1280, 1024).Link" data-lightbox="gallery">$Image.FocusFill(400, 300)</a>
+                    <a href="$FitMax(1280, 1024).Link" data-lightbox="gallery">$FocusFill(400, 300)</a>
                 </li>
             <% end_loop %>
         </ul>
