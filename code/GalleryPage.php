@@ -9,17 +9,32 @@ class GalleryPage extends Page {
 
     private static $db = [
         'Date' => 'Date',
-        'Location' => 'Varchar(255)',
+        'Location' => 'Text',
+    ];
+
+    private static $many_many = [
+        'Images' => 'Image',
+    ];
+
+    private static $many_many_extraFields = [
+        'Images' => ['SortOrder' => 'Int'],
     ];
 
     public function getCMSFields() {
-      $fields = parent::getCMSFields();
-      $fields->addFieldsToTab('Root.Main', [
-          DateField::create('Date', 'Datum'),
-          TextField::create('Location', 'Ort')
-      ], 'Content');
+        $fields = parent::getCMSFields();
+        $fields->addFieldsToTab('Root.Main', [
+            DateField::create('Date', 'Datum'),
+            TextareaField::create('Location', 'Ort'),
+        ], 'Content');
 
-      return $fields;
+        $fields->insertAfter(Tab::create('Images', 'Bilder'), 'Main');
+        $fields->addFieldsToTab('Root.Images', [
+            SortableUploadField::create('Images', 'Bilder')
+                ->setFolderName('galleries/' . $this->ID)
+                ->setDisplayFolderName('galleries/' . $this->ID)
+        ]);
+
+        return $fields;
     }
 }
 
